@@ -1,0 +1,13 @@
+class Father:
+    def __init__(self):
+        self.property = 5000
+    def  showProperty(self):
+        print("Property is {}".format(self.property))
+
+class Son(Father)  :
+    pass
+
+a = Son()
+a.showProperty()
+
+
