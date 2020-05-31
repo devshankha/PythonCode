@@ -45,6 +45,9 @@ print("dtype: {}".format(rand_array.dtype))
 print("Dimensions: {}".format(rand_array.ndim))
 print("Item size: {}".format(rand_array.itemsize))
 
+array = np.arange(8).reshape(4,2)
+print(array)
+
 a = numpy.array([[1,2,3], [2,3,4]])
 print(a.shape)
 print(a.shape[0])
