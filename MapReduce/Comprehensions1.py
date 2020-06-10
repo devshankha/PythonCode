@@ -21,6 +21,55 @@ dtct2 = {x:x**2 for x in output_dict}
 print(dtct2)
 print(output_dict)
 
+
+# doing this with comprehensions
+state = ['Gujarat', 'Maharashtra', 'Rajasthan']
+capital = ['Gandhinagar', 'Mumbai', 'Jaipur']
+dict_using_comp = {key: value for (key, value) in zip(state, capital)}
+print(dict_using_comp)
+
+
+# doing this without comprehensions ==
+
+state = ['Gujarat', 'Maharashtra', 'Rajasthan']
+capital = ['Gandhinagar', 'Mumbai', 'Jaipur']
+output_dict ={}
+# Using loop for constructing output dictionary
+for (key, value) in zip(state, capital):
+    output_dict[key] = value
+
+print(output_dict)
+
+# doing this without comprehensions
+paragraph = ["There was a fox." , 'It was brown in color.', "It was seen near that farm sometime back"]
+single_word_list =[]
+
+for sentence in paragraph:
+    for word in sentence.split():
+        single_word_list.append(word)
+
+print(single_word_list)
+
+# doing this with comprehensions
+
+single_word_list  = [word for sentence in paragraph for word in sentence.split()]
+print(single_word_list)
+
+# find words that begin with a vowel
+
+vowels = ['a','e','i','o','u']
+vowels_comp = [word for sentence in paragraph for word in sentence.split() if word[0].lower() in vowels]
+print(vowels_comp)
+
+
+
+
+
+
+
+
+
+
 product = lambda x,y: x*y
 print(product(3,4))
 
