@@ -3,6 +3,15 @@ Python list manipulations
 
 '''
 
+list = [1,2,3]
+# both will print [1, 2, 3, 1, 2, 3]
+print(list*2)
+print(2*list)
+
+l = 2*list
+
+
+
 list = [0,1,2,3,4,5,6,7,8]
 print(list)
 # [0, 1, 2, 3, 4, 5, 6, 7, 8]
