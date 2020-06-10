@@ -61,6 +61,19 @@ vowels = ['a','e','i','o','u']
 vowels_comp = [word for sentence in paragraph for word in sentence.split() if word[0].lower() in vowels]
 print(vowels_comp)
 
+students_data = {1:['Shivam Bansal', 24] , 2:['Udit Bansal',25], 3:['Sonam Gupta', 26]}
+names_dict ={}
+
+#iterate over each key, val pair
+for roll_num,details in students_data.items():
+    if roll_num%2==0:
+        names_dict[roll_num]= details[0]
+print(names_dict)
+
+
+names_comp = {roll_num:details[0] for roll_num,details in students_data.items() if roll_num%2==0}
+print(names_comp)
+
 
 
 
