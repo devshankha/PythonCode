@@ -18,6 +18,7 @@ print("Dimension is {}".format(arra2.shape))
 print("Dtype is {}".format(arra2.dtype))
 print("ndim is {}".format(arra2.ndim))
 print("itemsize is {}".format(arra2.itemsize))
+print("itemsize is {}".format(arra2.size))
 
 arra3 = np.arange(24).reshape(2,3,4)
 print(arra3)
