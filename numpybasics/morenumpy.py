@@ -4,6 +4,7 @@ print(arra1)
 print("Dimension is {}".format(arra1.shape))
 print("Dtype is {}".format(arra1.dtype))
 print("ndim is {}".format(arra1.ndim))
+print("itemsize is {}".format(arra1.size))
 print("itemsize is {}".format(arra1.itemsize))
 print(arra1[0,])
 
