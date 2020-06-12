@@ -48,6 +48,18 @@ print("Item size: {}".format(rand_array.itemsize))
 array = np.arange(8).reshape(4,2)
 print(array)
 
+
+#reshaping a 1d array to a 2d array
+a_1d_array = np.array([1, 2, 3, 4])
+print(a_1d_array)
+
+#If a dimension is given as -1 in a reshaping operation, the other dimensions
+# are automatically calculated:
+
+reshaped_to_2d = np.reshape(a_1d_array, (2,-1))
+print(reshaped_to_2d)
+
+
 a = numpy.array([[1,2,3], [2,3,4]])
 print(a.shape)
 print(a.shape[0])
