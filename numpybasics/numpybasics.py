@@ -54,3 +54,11 @@ print(a.shape[0])
 print(a.shape[1])
 print(a.ndim)
 print(a.itemsize)
+
+l1 = np.array([[1,2],[3,4]])
+l2 = np.array([[4,1],[2,1]])
+print(l1*l2) #ordinary matrix multiplication
+
+print(l1@l2)  #matrix multiplication
+
+S = l1.dot(l2) #same like matrix 
