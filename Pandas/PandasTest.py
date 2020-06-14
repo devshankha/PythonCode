@@ -21,3 +21,37 @@ print (df)
 data = [{'a': 1, 'b': 2},{'a': 5, 'b': 10, 'c': 20}]
 df = pd.DataFrame(data)
 print (df)
+
+
+#Series can also be added as numpy arrays
+arr1 = pd.Series([1,2,3])
+
+arr2 = pd.Series([4,5,6])
+
+arr3 = arr1+arr2
+print(arr3)
+
+
+print(arr1[:3])
+
+print(arr1[-4:])
+
+
+#apply method of series
+ar =arr1.apply(lambda x:x**2)
+print(ar)
+
+list = ["how","are","you"]
+s1 = pd.DataFrame(list)
+print(s1)
+s1.columns="fff"
+
+print(s1.columns)
+
+keys become colum names
+dict = {'name': ["aparna", "pankaj", "sudhir", "Geeku"],
+        'degree': ["MBA", "BCA", "M.Tech", "MBA"],
+        'score': [90, 40, 80, 98]}
+
+df = pd.DataFrame(dict)
+print(df)
