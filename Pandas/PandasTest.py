@@ -26,6 +26,9 @@ print (df)
 #Series can also be added as numpy arrays
 arr1 = pd.Series([1,2,3])
 
+#Pandas 
+
+
 arr2 = pd.Series([4,5,6])
 
 arr3 = arr1+arr2
@@ -55,3 +58,11 @@ dict = {'name': ["aparna", "pankaj", "sudhir", "Geeku"],
 
 df = pd.DataFrame(dict)
 print(df)
+
+# Indexing explicitly
+pd.Series([0, 1, 2], index = ['a', 'b', 'c'])
+
+# You can also give the index as a sequence or use functions to specify the index
+# But always make sure that the number of elements in the index list is equal to the number of elements specified in the series
+
+pd.Series(np.array(range(0,10))**2, index = range(0,10))
