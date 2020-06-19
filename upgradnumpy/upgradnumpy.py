@@ -37,3 +37,10 @@ check = np.tile(x, (n//2, n//2))
 
 # Print the created matrix
 print(check)
+
+array_2d =np.array([[1,2,3],[4,5,6]])
+print(array_2d)
+#EXTRACT SECOND ROW FROM ARRAY
+#print(array_2d[1,:])
+#EXTRACT SECOND COLUMN FROM ARRAY
+print(array_2d[:,1])
