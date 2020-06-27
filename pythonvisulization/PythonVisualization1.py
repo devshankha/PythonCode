@@ -40,3 +40,14 @@ inp1[inp1['Android Ver'].isnull()]
 #inp1[(inp1['Android Ver'].isnull() & (inp1.Category == "1.9"))]
 
 inp1 = inp1[~(inp1['Android Ver'].isnull() & (inp1.Category == "1.9"))]
+
+#Check the most common value in the Android version column
+inp1['Android Ver'].value_counts()
+
+inp1['Android Ver'].mode()[0]
+
+#this will give value as string 
+inp1['Android Ver'].mode()[0]
+
+#Fill up the nulls in the Android Version column with the most common value above value
+inp1['Android Ver']=inp1['Android Ver'].fillna(inp1['Android Ver'].mode()[0])
