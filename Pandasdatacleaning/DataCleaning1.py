@@ -47,3 +47,26 @@ data.isnull().any(axis=1)
 # rows having all missing values
 data.isnull().all(axis=1)
 
+# rows having at least one missing value
+print(data.isnull().any(axis=1))
+
+# rows having all missing values
+data.isnull().all(axis=1)
+
+# sum it up to check how many rows have all missing values
+print(data.isnull().all(axis=1).sum())
+
+#print(data.index)
+#print(len(data.index))
+# summing up the missing values (column-wise)
+print(round(100*(data.isnull().sum()/len(data.index)), 2))
+#  removing the column Age
+#data = data.drop('Age',axis=1)
+print(data)
+# rows having missing values greater than 1
+print(data[data.isnull().sum(axis=1) > 1])
+
+# count the number of rows having > 1 missing values
+# use len(df.index)
+print(len(data[data.isnull().sum(axis=1) > 1].index))
+
