@@ -30,6 +30,8 @@ print(data)
 
 # update a column with condition
 #print(type(data.loc))
+#both of the below works
+data.loc[(data.age >= 12), ['section']] = 'M'
 data.loc[(data.age >= 12), 'section'] = 'M'
 #print(data)
 print("---------------------------------------------------------")
