@@ -30,3 +30,5 @@ inp0['Android Ver'].mode()
 
 #inp0['Android Ver'].mode()[0]
 
+#Imputation, replace missing values in android column with the mode
+inp0['Android Ver'] =inp0['Android Ver'].fillna(inp0['Android Ver'].mode()[0])
