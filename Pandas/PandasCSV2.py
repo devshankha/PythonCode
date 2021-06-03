@@ -23,6 +23,9 @@ print("___________________")
 # The ":" indicates "all rows/columns"
 print(market_pdf.iloc[5, :])
 
+#print all elements of the third column
+print(market_pdf.iloc[:,3])
+
 print("___________________")
 
 # equivalent to market_pdf.iloc[5, ]
