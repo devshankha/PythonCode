@@ -61,6 +61,7 @@ print(data.isnull().all(axis=1).sum())
 # summing up the missing values (column-wise)
 print(round(100*(data.isnull().sum()/len(data.index)), 2))
 #  removing the column Age
+# note it is very important to give the axis, it can be 1 or columns
 #data = data.drop('Age',axis=1)
 print(data)
 # rows having missing values greater than 1
