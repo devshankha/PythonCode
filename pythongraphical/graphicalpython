@@ -1,0 +1,46 @@
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import os
+print(os.getcwd())
+inp0 = pd.read_csv("googleplaystore_v2.csv")
+
+//drawing a pie chart
+//pie chart is used for categorial variables
+//however, not very much recommended, instead go for bar charts or horizontal bar charts
+inp0['Content Rating'].value_counts()
+inp0['Content Rating'].value_counts().plot.pie()
+
+
+///very simple, make pie to a bar chart
+
+inp0['Content Rating'].value_counts().plot.bar()
+
+///very simple, make pie to a horizontal bar chart
+inp0['Content Rating'].value_counts().plot.barh()
+
+
+.////drawing a distplot
+
+
+inp0 = pd.read_csv("googleplaystore_v2.csv")
+sns.distplot(inp0.Rating,bins=20)
+sns.set_style("black")
+plt.title("MMMMMMMMMMMMMM")
+
+
+///scatter plot
+
+plt.scatter(inp0.Size,inp0.Rating)
+plt.show()
+
+/// joinplot in seaborn
+
+sns.jointplot(inp0.Size,inp0.Rating)
+plt.show()
+
+//regression plot
+sns.jointplot(inp0.Size,inp0.Rating,kind="reg")
+plt.show()
+
