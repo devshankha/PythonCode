@@ -15,7 +15,7 @@ data = pd.DataFrame({
 print(data)
 
 #select rows based on multiple conditions
-#data = data.loc[(data.age > 17) & (data.gender == 'm')]
+#data = data.loc[(data.age > 17) & (data.gender == 'M')]
 #print(data)
 
 # And if the indices are not numbers, then we cannot slice our dataframe.
