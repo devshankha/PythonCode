@@ -59,6 +59,7 @@ print(data.isnull().all(axis=1).sum())
 #print(data.index)
 #print(len(data.index))
 # summing up the missing values (column-wise)
+#percentage of missing values, basically sum then divide by number of rows (data.index)
 print(round(100*(data.isnull().sum()/len(data.index)), 2))
 #  removing the column Age
 # note it is very important to give the axis, it can be 1 or columns
